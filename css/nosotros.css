@@ -1,0 +1,36 @@
+:root {
+    --rojo: #e50914;
+    --fondo: #000000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--fondo);
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.descripcion {
+    margin: 30px 30px 0 30px;
+}
+
+h1 {
+    color: white;
+    font: auto;
+    
+}
+
+.reclutamiento {
+    border: 1px solid #e50914;
+}

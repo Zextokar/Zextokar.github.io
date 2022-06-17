@@ -1,0 +1,429 @@
+/* ---- ----- ----- Banner----- ----- ----- */
+:root {
+    --rojo: #e50914;
+    --fondo: #000000;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--fondo);
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ---- ----- ----- Slider ----- ----- ----- */
+
+.slider-frame {
+	width: 1280px;
+    height: 500;
+	margin: 0 20px;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	height: 300%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+    width: 1280px;
+    height: 500px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/* ---- ----- ----- Textos ----- ----- ----- */
+
+.Textos-superiores h2{
+    font-family: 'Teko', sans-serif;
+    font-weight: normal;
+    color: blacks solid;
+    font-size: 40px;
+    margin: 6px 40px;
+    color: #fff;
+}
+
+.sinopsis {
+    margin: 0px 0px;
+    color: #fff;
+    font-size: 20px;
+    padding: 90px 40px 10px 40px;
+}
+
+/* ---- ----- ----- Subidas ----- ----- ----- */
+
+.Subidas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 10px 40px;
+}
+  
+.Subidas img {
+    width: 100%;
+    height: 180px;
+    transition: all 300ms;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 10%;
+    background-size: 100% auto;
+}
+
+  
+.Subidas h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: white;
+}
+
+.Subidas p {
+    color: white;
+}
+
+.Subidas img:hover {
+    transform: scale(1.1,1.1);
+}
+
+/* Episodios */
+
+.episodios {
+    display: grid;
+    grid-template-columns: repeat(5, 16fr);
+    gap: 25px;
+    margin: 10px 40px;
+}
+  
+.episodios img {
+    width: 100%;
+    height: 120px;
+    transition: all 300ms;
+}
+  
+.episodios h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    color: white;
+}
+
+.episodios p {
+    color: white;
+}
+
+.episodios img:hover {
+    transform: scale(1.1,1.1);
+}
+/* Boton */
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    display: none;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+}
+
+/* Banner Series */
+
+.Proyectos01 {
+    width: 54.5%;
+    height: 300px;
+    background: url("/Imagenes/Recomendados01.png");
+    margin-bottom: 40px;
+    margin: 10px 40px;
+}
+
+.Proyectos02 {
+    width: 54.5%;
+    height: 300px;
+    background: url("/Imagenes/Recomendados02.png");
+    margin-bottom: 40px;
+    margin: 45px 40px;
+}
+
+.Proyectos01 .content {
+    width: 70%;
+    padding: 5px 0 0 30px;
+    color: rgb(255, 255, 255);
+    margin: 0px 700px;
+}
+
+.Proyectos02 .content {
+    width: 70%;
+    padding: 5px 0 0 30px;
+    color: rgb(255, 255, 255);
+    margin: 0px 700px;
+}
+  
+.Proyectos01 p {
+    margin: 10px 0 20px 0;
+}
+
+.Proyectos02 p {
+    margin: 10px 0 20px 0;
+}
+
+/* Redes Sociales */
+
+.Social {
+    margin: 50px;
+}
+
+.Social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    margin: 0 20px;
+}
+
+.links a i{
+    font-size: 250%;
+}
+
+.facebook {
+    color: blue;
+}
+
+.twitter {
+    color: rgb(0, 255, 255);
+}
+
+.telegram {
+    color: rgb(0, 107, 107);
+}
+
+/* Banner Episodios */
+
+.Banner {
+    width: 1280px;
+    height: 510px;
+    margin: 10px 50px 20px 20px;
+}
+
+.Banner img {
+    width: 1280px;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+}
+/* Logos Series */
+
+.channel-logo{
+    padding: 10px 10px 10px 45px;
+    width: 530px;
+    position: relative;
+    overflow : hidden;
+}
+
+.c-logo{
+    width: 330px;
+}
+
+.btns {
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 5px 15px;
+    background: #262626;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #fff;
+    margin: 0 50px 0 50px;
+}
+
+/* Episodios */
+
+h3 {
+    font-weight: normal;
+}
+
+.episodios {
+    display: grid;
+    grid-template-columns: repeat(5, 6fr);
+    gap: 25px;
+    margin: 10px 40px;
+}
+  
+.episodios img {
+    width: 100%;
+    height: 120px;
+    transition: all 300ms;
+}
+  
+.episodios h3 {
+    font-size: 15px;
+    margin: 5px 0 0 5px;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.episodios p {
+    color: white;
+}
+
+.episodios img:hover {
+    transform: scale(1.1,1.1);
+}
+
+.episodios img {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 10%;
+    background-size: 100% auto;
+}
+
+.padre-sinopsis p {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 40px;
+    padding-top: 30px;
+}
+
+/* Catalogo */
+
+.catalogo {
+    text-align: left;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
+}
+.catalogo a {
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 50px 30px 0;
+    margin: 0 0;
+    color: #fff;
+}
+
+.Nombres h2 {
+    color: #fff;
+    margin: 0 40px 30px;
+    font-weight: normal;
+}
+
+/* Downloader */
+
+.download {
+    font-size: 50px;
+    margin: 10px 40px;
+}
+
+.download a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Boton Trailer */
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 50px;
+    background: 141414;
+    color: black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.boton span{
+    position: absolute;
+    left: 13%;
+    top: 20%;
+    text-decoration: none;
+    color: #000000;
+}
+
+.boton {
+    margin: -70px 130px;
+    position: absolute;
+}
+
+.Estrellas {
+    color: #fff;
+    font-size: 110%;
+    position: absolute;
+    margin: -70px 310px;
+    color: yellow;
+    text-align: left;
+}
+.Logo img {
+    width: 300px;
+    height: 200px;
+}
+
+.Logo {
+    position: absolute;
+    z-index: 2;
+    top: 150px;
+    left: 20px;
+}
+
+.atras {
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 5px 30px;
+    background: #262626;
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid #fff;
+    margin: 0 50px 0 50px;
+}
+
+.atras a {
+    color: #fff;
+}
