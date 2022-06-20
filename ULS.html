@@ -5,9 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="css/Cabecera.css">
+  <link rel="stylesheet" href="/css/Carrusel.css">
+  <link rel="stylesheet" href="/css/Carruselv2.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- i will provide this in description  -->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/slick-theme.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/select2.min.css" />
+  <link rel="stylesheet" href="css/select2-bootstrap4.min.css" />
+  <link rel="stylesheet" href="css/slick-animation.css" />
+  <link rel="stylesheet" href="style.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f0841ad563.js" crossorigin="anonymous"></script>
 
 	<title>UnlimitedSubs</title>
@@ -21,8 +38,7 @@
       <nav>
         <a href="/ULS.html" class="activo">Inicio</a>
         <a href="/series.html">Series</a>
-        <a href="#">Películas</a>
-        <a href="#">Especiales</a>
+        <a href="/Peliculas.html">Películas/Especiales</a>
         <a href="/Nosotros.html">Nosotros</a>
       </nav>
 		</div>
@@ -30,7 +46,7 @@
   <div class="slider-frame">
     <ul>
       <li>
-        <img src="/Imagenes/DonBrothers/DBBanner.jpg" alt="">
+        <a href=""><img src="/Imagenes/DonBrothers/DBBanner.jpg" alt=""></a>
       </li>
       <li>
         <img src="/Imagenes/Recomendados02.png" alt="">
@@ -43,6 +59,35 @@
       </li>
     </ul>
   </div>
+  <div class="Textos-superiores">
+    <h2>Recomendaciones del Fansub</h5>
+  </div>
+  <div class="container">
+    <div class="mySlides">
+        <a href=""><img src="/Imagenes/DonBrothers/don10.png" alt="imagen-1"></a>
+        <a href=""><img src="/Imagenes/UTTaiga/Taiga_01.png" alt="imagen-1"></a>
+        <a href=""><img src="/Imagenes/UTZ/Z_01.png" alt="imagen-1"></a>
+        <a href=""><img src="/Imagenes/Kiramager/Kiramager_Episode_13.png" alt="imagen-1"></a>
+        <a href=""><img src="/Imagenes/Zenkaiger/Zenkaiger_Episode_11.png" alt="imagen-1"></a>
+    </div>
+    <div class="mySlides">
+      <a href=""><img src="/Imagenes/KRRevice/Revice_01.png" alt=""></a>
+      <a href=""><img src="/Imagenes/Shinkenger/Shinken03.png" alt=""></a>
+      <a href=""><img src="/Imagenes/KRSaber/Saber_03.png" alt=""></a>
+      <a href=""><img src="/Imagenes/PelisYEspe/GaimGaiden.png" alt=""></a>
+      <a href=""><img src="/Imagenes/Double/W_02.png" alt=""></a>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="elements">
+        <span class="quadrate" onclick="currentSlide(1)"></span>
+        <span class="quadrate" onclick="currentSlide(2)"></span>
+    </div>
+  
+  </div>
+  <script src="script.js"></script>
   <div class="Textos-superiores">
     <h2>Ultimas Subidas</h5>
   </div>
@@ -81,35 +126,6 @@
       </div>
     </section>
   </div>
-  <div class="Textos-superiores">
-    <h2>Recomendaciones del Fansub</h5>
-  </div>
-  <div class="Subidas">
-    <div>
-      <a href="https://vk.com/video706985186_456239086">
-        <img src="/Imagenes/DonBrothers/don14.png" alt="" />
-      </a>
-      <h3>Avataro Sentai Donbrothers 14</h3>
-    </div>
-    <div>
-      <a href="https://ok.ru/video/4077270272749">
-        <img src="Imagenes/Promise.png" alt="" />
-      </a>
-      <h3>MV-Promise</h3>
-    </div>
-    <div>
-       <a href="https://ok.ru/video/3384290773725">
-        <img src="/Imagenes/KRRevice/Revice_36.png" alt="" />
-       </a>
-       <h3>Kamen Rider Revice 36</h3>
-    </div>
-   <div>
-      <a href="https://vk.com/video706985186_456239074">
-        <img src="/Imagenes/Vail 05.jpg" alt="" />
-      </a>
-      <h3>Vail 05</h3>
-    </div>
-  </div>
   <section class="Proyectos02">
     <div class="content">
       <h2>Ultraman Trigger</h2>
@@ -119,23 +135,4 @@
       <a href="#" class="btn">Ver Serie</a>
     </div>
   </section>
-  <div>
-    <section class="Social">
-        <p>Redes Sociales</p>
-      <div class="links">
-        <a href="https://www.facebook.com/ULSubs/" class="facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://twitter.com/ULSubs" class="twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="https://t.me/+drsQ7nENze4wNDNh" class="telegram">
-          <i class="fab fa-telegram"></i>
-         </a>
-         <a href="https://discordapp.com/invite/m76VrSb" class="discord">
-          <i class="fab fa-discord"></i>
-         </a>
-       </div>
-    </section>
-  </div>
 </body>

@@ -1,8 +1,7 @@
 /* ---- ----- ----- Banner----- ----- ----- */
 :root {
     --rojo: #e50914;
-    --fondo: #000000;
-
+    --fondo: #141414;
 }
 
 * {
@@ -15,6 +14,7 @@
 body {
     background: var(--fondo);
     font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* ---- ----- ----- Slider ----- ----- ----- */
@@ -64,7 +64,7 @@ body {
     font-weight: normal;
     color: blacks solid;
     font-size: 40px;
-    margin: 6px 40px;
+    margin: 10px 40px;
     color: #fff;
 }
 
@@ -151,7 +151,6 @@ body {
     cursor: pointer;
     display: inline-block;
     border: 0;
-    font-weight: bold;
     padding: 10px 20px;
     background: #262626;
     color: #fff;
@@ -197,6 +196,15 @@ body {
 
 .Proyectos02 p {
     margin: 10px 0 20px 0;
+}
+
+.content h2 {
+    font-style: none;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.content p {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /* Redes Sociales */
