@@ -1,0 +1,268 @@
+/* Links */
+
+.footer-links {
+  background: #111111;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer-container ul {
+  margin: 0 auto;
+}
+
+.footer-container h3 {
+    font-size: 30px;
+    color: white;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-links li {
+  line-height: 2.8;
+  font-size: 15px;
+}
+
+.footer {
+  background: #111111;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+/* Social Bar */
+
+.container-bar{
+	width: 100%;
+	max-width: 50px;
+	position: fixed;
+	left: 0;
+	top: 25%;
+}
+.container-bar a{
+	display: block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+	transition: all 500ms ease;
+	color: #fff;
+}
+.container-bar a:hover{
+	background: #1c1c1c;
+}
+.container-bar .fa-facebook{
+	background: #3b5998;
+	border-radius: 0px 5px 0px 0px;
+}
+.container-bar .fa-twitter{
+	background: #00acee;
+}
+.container-bar .fa-discord{
+	background: rgb(88, 101, 242);
+}
+.container-bar .fa-telegram{
+	background: rgb(42 171 238);
+	border-radius: 0px 0px 5px 0px;
+    font-size: 30px;
+}
+
+.container-bar .fa-paypal{
+	background: #1e477a;
+	border-radius: 0px 0px 5px 0px;
+    font-size: 30px;
+}
+.container-bar #title{
+	position: absolute;
+	background: #1c1c1c;
+	padding: 0px 8px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 3px;
+	font-size: 15px;
+	top:12px; left: 0px;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+}
+.container-bar a:hover #title{
+	opacity: 1;
+	visibility: visible;
+	left: 64px;
+}
+.container-bar #title:after{
+	position: absolute;
+	content: '';
+	border-left: 7px solid transparent;
+	border-right: 6px solid #1c1c1c;
+	border-top: 7px solid transparent;
+	border-bottom: 7px solid transparent;
+	right: 100%;
+	top: 8px;
+}
+#btn-social{
+	display: none;
+}
+.fa-play{
+	cursor: pointer;
+	transition: all 0.4s;
+	font-size: 22px;
+	margin-bottom: 5px;
+	display: inline-block;
+	transform: rotate(180deg);
+	color: #49b0e6;
+}
+#btn-social:checked ~ .fa-play{
+	transform: rotate(0deg);
+}
+.icon-social{
+	transition: all 0.4s;
+	transform: translateX(0%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+}
+#btn-social:checked ~ .icon-social{
+	transform: translateX(-100%);
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.0);
+}
+/*--------------------------Slovers------------------------------*/
+.series-rows {
+	margin: 0px auto;
+	padding: 0 20px;
+}
+
+.grid {
+  display: grid;
+  grid-row-gap: 15px;
+  padding-bottom: 10px;
+}
+.item-border {
+  position: relative;
+  border-radius: 10px;
+  transition: transform 250ms ease-in-out, border 250ms ease-in-out,
+	box-shadow 250ms ease-in-out;
+}
+.item-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+}
+.item-image.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition-duration: 300ms;
+  visibility: hidden;
+}
+.card-series:hover .item-border {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px,
+	rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+  transform: scale(1.05);
+  border: 4px solid rgba(249, 249, 249, 0.8);
+}
+
+.card-series:hover .item-image.hover-image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (min-width: 300px) {
+  .grid {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 15px;
+  }
+  .films {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 15px;
+  }
+  .item-border {
+	border: 2px solid rgba(249, 249, 249, 0.1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 15px;
+  }
+  .item-border {
+	border: 4px solid rgba(249, 249, 249, 0.1);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-column-gap: 15px;
+  }
+}
+
+.list-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+/*----------------Slider------------------------*/
+
+.container-general {
+	margin: 0px 10px 10px 0px;
+	overflow: hidden;
+}
+
+.slider-films img {
+	width: 100%;
+	height: 400px;
+	padding: 10px;
+}
+
+
+/*Recomendaciones*/
+
+.recomendacion img{
+	margin: 10px 40px;
+}
+
+.letras h3 {
+	color: white;
+	margin-left: 550px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.letras p {
+	color: white;
+	margin-left: 850px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
