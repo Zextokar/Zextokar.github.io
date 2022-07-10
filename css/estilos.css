@@ -2,6 +2,11 @@
 :root {
     --rojo: #e50914;
     --fondo: #141414;
+    --text-color: #ffffff;
+
+    --nav-height: 60px;
+    --space-top: 30px;
+    --main-color: #c0392b;
 }
 
 * {
@@ -17,46 +22,6 @@ body {
     scroll-behavior: smooth;
 }
 
-/* ---- ----- ----- Slider ----- ----- ----- */
-
-.slider-frame {
-	width: 1280px;
-    height: 500;
-	margin: 0 20px;
-	overflow: hidden;
-}
-
-.slider-frame ul {
-	display: flex;
-	padding: 0;
-	width: 400%;
-	height: 300%;
-	animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider-frame img {
-    width: 1280px;
-    height: 500px;
-}
-
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
 /* ---- ----- ----- Textos ----- ----- ----- */
 
 .Textos-superiores h2{
@@ -75,39 +40,6 @@ body {
     padding: 90px 40px 10px 40px;
 }
 
-/* ---- ----- ----- Subidas ----- ----- ----- */
-
-.Subidas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
-    margin: 10px 40px;
-}
-  
-.Subidas img {
-    width: 100%;
-    height: 160px;
-    transition: all 300ms;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    border-radius: 10%;
-}
-
-  
-.Subidas h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    color: white;
-    text-align: center;
-}
-
-.Subidas p {
-    color: white;
-}
-
-.Subidas img:hover {
-    transform: scale(1.1,1.1);
-}
 /* Boton */
 
 .menu-btn {
@@ -129,68 +61,20 @@ body {
     border: 1px solid #fff;
 }
 
-/* Banner Series */
-
-.Proyectos01 {
-    width: 54.5%;
-    height: 300px;
-    background: url("/Imagenes/Recomendados01.png");
-    margin-bottom: 40px;
-    margin: 10px 40px;
-}
-
-.Proyectos02 {
-    width: 54.5%;
-    height: 300px;
-    background: url("/Imagenes/Recomendados02.png");
-    margin-bottom: 40px;
-    margin: 45px 40px;
-}
-
-.Proyectos01 .content {
-    width: 70%;
-    padding: 5px 0 0 30px;
-    color: rgb(255, 255, 255);
-    margin: 0px 700px;
-}
-
-.Proyectos02 .content {
-    width: 70%;
-    padding: 5px 0 0 30px;
-    color: rgb(255, 255, 255);
-    margin: 0px 700px;
-}
-  
-.Proyectos01 p {
-    margin: 10px 0 20px 0;
-}
-
-.Proyectos02 p {
-    margin: 10px 0 20px 0;
-}
-
-.content h2 {
-    font-style: none;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
-.content p {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
 /* Banner Episodios */
 
 .Banner {
-    width: 1280px;
-    height: 510px;
-    margin: 10px 50px 20px 20px;
+    width: 75vw;
+    max-width: 2000px;
+    min-width: 320px;
+    margin: auto 20px 10px;
 }
 
 .Banner img {
-    width: 1280px;
-    height: 500px;
-    position: absolute;
-    z-index: 1;
+    width: 129%;
+    height: auto;
+    position: sticky;
+    top: 20px;
 }
 /* Logos Series */
 
@@ -225,8 +109,8 @@ h3 {
 
 .episodios {
     display: grid;
-    grid-template-columns: repeat(5, 6fr);
-    gap: 25px;
+    grid-template-columns: repeat(auto-fill, minmax(12rem,6fr));
+    gap: 1rem;
     margin: 10px 40px;
 }
   
@@ -267,6 +151,12 @@ h3 {
     padding-top: 30px;
 }
 
+.padre-sinopsis2 p {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0px;
+    padding-top: 30px;
+}
 /* Catalogo */
 
 .catalogo {
@@ -332,42 +222,6 @@ h3 {
     position: absolute;
 }
 
-.Estrellas {
-    color: #fff;
-    font-size: 110%;
-    position: absolute;
-    margin: -70px 310px;
-    color: yellow;
-    text-align: left;
-}
-.Logo img {
-    width: 300px;
-    height: 200px;
-}
-
-.Logo {
-    position: absolute;
-    z-index: 2;
-    top: 150px;
-    left: 20px;
-}
-
-.atras {
-    display: inline-block;
-    border: 0;
-    font-weight: bold;
-    padding: 5px 30px;
-    background: #262626;
-    color: #fff;
-    font-size: 30px;
-    border: 1px solid #fff;
-    margin: 0 50px 0 50px;
-}
-
-.atras a {
-    color: #fff;
-}
-
 /* 404 */
 
 #message { 
@@ -425,4 +279,170 @@ h3 {
 @media (max-width: 600px) {
     body, #message { margin-top: 0; background: white; box-shadow: none; }
     body { border-top: 16px solid #ffa100; }
+}
+
+
+
+/*Slider */
+
+.slider{
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 100%;
+  height: 400px;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .slider{
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slide img{
+        width: 100%;
+        height: 400px;
+    }  
+}
+
+@media only screen and (max-width: 850px){
+    .slider{
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .slide img{
+        width: 100%;
+        height: 250px;
+    }  
+}
+
+/*AAAAAAAAAAAAAAAa*/
+
+.trending{
+    margin-top: 10px;
+    padding-left: 20px;
+    
+}
+
+h1{
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-left: 20px;
+}
+
+.trending .movie-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 10px 0px 10px;
+}
+.list{
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+
+.list::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: all 0.4s;
+}
+
+.list:hover::before{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.movie-container img {
+    width: 100%;
+    height: 300px;
+}
+
+.list:nth-child(1)::before{
+    content: 'Gokaiger VS Goseiger: La Gran Batalla de los 199 Héroes';
+}
+.list:nth-child(2)::before{
+    content: 'Kishiryu Sentai Ryusoulger Special Chapter: Memory of Soulmates';
+}
+
+.list:nth-child(3)::before{
+    content: 'Kamen Rider Zero-One Others: Kamen Rider Metsuboujinrai';
+}
+.list:nth-child(4)::before{
+    content: 'Kaizoku Sentai Ten Gokaiger';
+}
+
+.list:nth-child(5)::before{
+    content: 'Kishiryu Sentai Ryusoulger: El Legado de EL ALMA DEL MAESTRO';
 }

@@ -41,6 +41,8 @@ header nav a {
     color: #aaa;
     text-decoration: none;
     margin-right: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 15px;
 }
 
 header nav a:hover,
@@ -50,4 +52,48 @@ header nav a.activo {
 
 .slider-frame h3 {
     color: #fff;
+}
+
+@media only screen and (min-width: 300px) {
+    .contenedor {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    header .logotipo {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .contenedor {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    header .logotipo {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .contenedor {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    header .logotipo {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .contenedor {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    header .logotipo {
+        font-size: 50px;
+    }
 }

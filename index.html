@@ -15,8 +15,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/f0841ad563.js" crossorigin="anonymous"></script>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
 	<title>UnlimitedSubs</title>
   <link rel="icon" href="/Imagenes/Logo.png">
 </head>
@@ -33,31 +31,50 @@
       </nav>
 		</div>
 	</header>
-  <div class="container-general">
-    <div class="slider-films">
-        <div class="slider center">       
-            <div class="slide">
-                <div class="cl">
-                <img src="/Imagenes/DonBrothers/DBBanner.jpg" alt="">
-              </div></a>
-            </div>
-            <div class="slide">
-              <div class="cl">
-                <img src="/Imagenes/KRSaber/KRSBanner.png" alt="">
-              </div>
-            </div>
-            <div class="slide">
-              <div class="cl">
-                <img src="/Imagenes/UTTaiga/UTTBanner.png" alt="">
-              </div>
-            </div>
+  <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <div class="slide first">
+            <a href="/Dino-fury.html">
+              <img src="/Imagenes/Dino-Fury/PRDFBanner.png" alt="">
+            </a>
+          </div>
           <div class="slide">
-              <div class="cl">
-                <img src="/Imagenes//KRRevice/KRRBanner.png" alt=""></h3>
-              </div>
-            </div>  
+            <a href="/Donbrothers.html">
+              <img src="/Imagenes/DonBrothers/DBBanner.jpg" alt="">
+            </a>
+          </div>
+          <div class="slide">
+            <a href="/Girg-Gun-Lady.html">
+              <img src="/Imagenes/Girl-Gun-Lady/GGLBanner.png" alt="">
+            </a>
+          </div>
+          <div class="slide">
+            <a href="/Revice.html">
+              <img src="/Imagenes/KRRevice/KRRBanner.png" alt="">
+            </a>
+          </div>
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
         </div>
-    </div>
+      </div>
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
   </div>
   <div class="main series-rows">
     <h3 class="list-title">Últimas Subidas</h3>
@@ -101,12 +118,86 @@
       </div>
     </div>
   </div>
-  <div class="recomendacion">
-    <img src="/Imagenes/Recomendados01.png" alt="">
+  <section class="category" id="category">
+    <h2 class="Titulo">Serie al aire</h2>
+    <h5 class="Titulos">Avataro Sentai Donbrothers</h5>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="/Imagenes/DonBrothers/don1.png" alt="" class="card-img">
+        <div class="name">Don 01</div>
+      </div>
+      <div class="category-card">
+        <img src="/Imagenes/DonBrothers/don2.png" alt="" class="card-img">
+        <div class="name">Don 02</div>
+      </div>
+      <div class="category-card">
+        <img src="/Imagenes/DonBrothers/don3.png" alt="" class="card-img">
+        <div class="name">Don 03</div>
+      </div>
+      <div class="category-card">
+        <img src="/Imagenes/DonBrothers/don4.png" alt="" class="card-img">
+        <div class="name">Don 04</div>
+      </div>
+      <div class="category-card">
+        <img src="/Imagenes/DonBrothers/don5.png" alt="" class="card-img">
+        <div class="name">Don 05</div>
+      </div>
+    </div>
+  </section>
+  <div class="trending">
+    <h1>Especiales Recomendados</h1>
+    <div class="movie-container">
+        <div class="list">
+          <a href="/404.html">
+            <img src="/Imagenes/PelisYEspe/GKXGS199.png" alt="">
+          </a>
+        </div>
+        <div class="list">
+          <a href="/404.html">
+            <img src="/Imagenes/PelisYEspe/KSRSC.png" alt="">
+          </a>
+        </div>
+        <div class="list">
+          <a href="/404.html">
+            <img src="/Imagenes/PelisYEspe/Kamen Rider Metsuboujinrai.png" alt="">
+          </a>
+        </div>
+        <div class="list">
+          <a href="/404.html">
+            <img src="/Imagenes/PelisYEspe/TenGokaiger.jpg" alt="">
+          </a>
+        </div>
+        <div class="list">
+          <a href="/404.html">
+            <img src="/Imagenes/PelisYEspe/KSRML.png" alt="">
+          </a>
+        </div>
+    </div>
   </div>
-  <div class="letras">
-    <h3>Kikai Sentai Zenkaiger</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quisquam laboriosam, magni cum nam dolorem quidem unde harum voluptatibus, similique aut odit impedit omnis labore odio repellendus eligendi aperiam natus.</p>
+  <div class="section">
+    <div class="hero-slide-item">
+        <img src="/Imagenes/UTTrigger/UTBanner.png" alt="">
+        <div class="overlay"></div>
+        <div class="hero-slide-item-content">
+            <div class="item-content-wraper">
+                <div class="item-content-title">
+                    Ultraman Trigger
+                </div>
+
+                <div class="item-content-description">
+                  Hace 30 millones de años, el mundo estaba sumido en una oscuridad aterradora. Pero esa oscuridad fue sellada en las profundidades del espacio por el Gigante de la Luz. Agotado su poder, el Gigante de la Luz duerme en la estrella roja y se olvida del tiempo…
+                  <br>
+                   Un encuentro fortuito con nada menos que el dormido Gigante de la Luz. ¿Cómo influirá el encuentro de Kengo con el Gigante de la Luz en su destino y en el de la Tierra? El Gigante de la Luz renace después de una eternidad.
+                </div>
+                <div class="item-action">
+                    <a href="#" class="btn btn-hover">
+                        <i class="bx bxs-right-arrow"></i>
+                        <span>VER AHORA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
   <div class="footer-links">
     <div class="footer-container">
@@ -158,7 +249,4 @@
       </div>
     </label>
   </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
-  <script src="js/slider.js"></script>
 </body>
