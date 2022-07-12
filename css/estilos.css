@@ -3,7 +3,6 @@
     --rojo: #e50914;
     --fondo: #141414;
     --text-color: #ffffff;
-
     --nav-height: 60px;
     --space-top: 30px;
     --main-color: #c0392b;
@@ -14,7 +13,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     background: var(--fondo);
@@ -445,4 +443,53 @@ h1{
 
 .list:nth-child(5)::before{
     content: 'Kishiryu Sentai Ryusoulger: El Legado de EL ALMA DEL MAESTRO';
+}
+
+.Series .list:nth-child(1)::before{
+    content: 'Kikai Sentai Zenkaiger';
+}
+.Series .list:nth-child(2)::before{
+    content: 'Kamen Rider Saber';
+}
+.Series .list:nth-child(3)::before{
+    content: 'Ultraman Z';
+}
+.Series .list:nth-child(4)::before{
+    content: 'Kagaku Sentai Dynaman';
+}
+.Series .list:nth-child(5)::before{
+    content: 'Kamen Rider W';
+}
+
+/*VCCCCCCCCCCCCCCCCCCCcc*/
+
+#main-container{
+    padding-top: 20px;
+    text-align: left;
+}
+
+#main-container a{
+    margin-left: 10px;
+}
+
+.btn-green{
+    color: white;
+    background-color: #FFD700;
+}
+.btn-green:hover{
+    background-color: #ad9b31;	
+}
+.btn-green:active{
+    background-color: #FFD700;
+}
+
+.btn-red{
+    color: white;
+    background-color: #32CD32;
+}
+.btn-red:hover{
+    background-color: #13d313;	
+}
+.btn-red:active{
+    background-color: #32CD32;
 }

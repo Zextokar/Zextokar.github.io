@@ -1,7 +1,6 @@
 :root {
     --rojo: #e50914;
     --fondo: #000000;
-
 }
 
 * {
@@ -40,14 +39,14 @@ header .logotipo{
 header nav a {
     color: #aaa;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 10px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     font-size: 15px;
 }
 
 header nav a:hover,
 header nav a.activo {
-        color: #fff;
+    color: #fff;
 }
 
 .slider-frame h3 {
